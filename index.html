@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub Issues Tracker</title>
+<link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    hello world
-    
-</body>
-</html>
+
+<!-- Login-page -->
+
+<section id="loginPage">
+
+<div class="loginCard">
+
+<h1><img src="./assets/github-logo.png" alt="logo"> GitHub Issues Tracker</h1>
+
+<p>Sign in to manage your issues</p>
+
+<input id="username" placeholder="Username">
+<input id="password" type="password" placeholder="Password">
+
+<button onclick="login()">Sign In</button>
+
+<p class="demo">Demo: admin / admin123</p>
+
+<p id="loginError"></p>
+
+</div>
+
+</section>
+
+<!-- login page end -->
