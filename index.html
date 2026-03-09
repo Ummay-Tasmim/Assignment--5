@@ -53,3 +53,57 @@ GitHub Issues Tracker
 </nav>
 
 <!-- dashboard end -->
+
+<!-- TABS -->
+
+<div class="tabs">
+
+<button class="tab active" onclick="setTab('all')">All</button>
+<button class="tab" onclick="setTab('open')">Open</button>
+<button class="tab" onclick="setTab('closed')">Closed</button>
+
+</div>
+
+<!-- tab end -->
+
+
+<!-- label -->
+
+<div class="labelFilters">
+
+<button onclick="setLabel('all')">All Labels</button>
+<button onclick="setLabel('BUG')">BUG</button>
+<button onclick="setLabel('HELP WANTED')">HELP WANTED</button>
+<button onclick="setLabel('ENHANCEMENT')">ENHANCEMENT</button>
+
+</div>
+
+
+<!-- issue -->
+
+<div class="issuesHeader">
+
+<div class="left">
+
+⚙ <span id="count"></span>
+<p>Track and manage your project issues</p>
+
+</div>
+
+<div class="right">
+
+<span class="dot openDot"></span> Open
+<span class="dot closedDot"></span> Closed
+
+</div>
+
+</div>
+
+
+<div id="spinner"></div>
+
+<div id="issuesGrid"></div>
+
+</section>
+
+<!-- issue end -->
