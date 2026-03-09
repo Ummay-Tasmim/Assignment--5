@@ -112,3 +112,125 @@ background:#22c55e;
 .closedDot{
 background:#8b5cf6;
 }
+
+/* grid start */
+
+#issuesGrid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+padding:30px;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+cursor:pointer;
+transition:.2s;
+}
+
+.card:hover{
+transform:translateY(-4px);
+}
+
+.card.open{
+border-top:4px solid #22c55e;
+}
+
+.card.closed{
+border-top:4px solid #8b5cf6;
+}
+
+/* badges */
+
+.badges{
+margin-top:8px;
+display:flex;
+gap:6px;
+}
+
+.badge{
+font-size:11px;
+padding:4px 8px;
+border-radius:6px;
+}
+
+.priority{
+background:#ede9fe;
+color:#5b21b6;
+}
+
+.bug{
+background:#fee2e2;
+color:#b91c1c;
+}
+
+.help{
+background:#fef3c7;
+color:#92400e;
+}
+
+.enhancement{
+background:#dcfce7;
+color:#166534;
+}
+
+/* spinner */
+
+#spinner{
+display:none;
+margin:40px auto;
+width:40px;
+height:40px;
+border:6px solid #eee;
+border-top:6px solid purple;
+border-radius:50%;
+animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+100%{transform:rotate(360deg);}
+}
+
+/* modal */
+
+#modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+justify-content:center;
+align-items:center;
+}
+
+.modalCard{
+background:white;
+width:420px;
+padding:25px;
+border-radius:12px;
+}
+
+.modalFooter{
+display:flex;
+justify-content:space-between;
+margin-top:20px;
+}
+
+/* responsive */
+
+@media(max-width:992px){
+#issuesGrid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:577px){
+#issuesGrid{
+grid-template-columns:1fr;
+}
+}
