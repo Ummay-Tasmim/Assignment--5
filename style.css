@@ -1,0 +1,114 @@
+body{
+margin:0;
+background:#f4f6f9;
+}
+
+/* login start */
+
+#loginPage{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.loginCard{
+background:white;
+padding:40px;
+width:350px;
+border-radius:10px;
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.loginCard input{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+.loginCard button{
+width:100%;
+padding:10px;
+background:#6d28d9;
+color:white;
+border:none;
+border-radius:6px;
+}
+
+.demo{
+font-size:12px;
+color:#666;
+}
+
+/* login end */
+
+/* dashboard start */
+
+#dashboard{
+display:none;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+background:white;
+padding:15px 30px;
+}
+
+.tabs{
+margin:20px 30px;
+}
+
+.tab{
+padding:8px 18px;
+border:1px solid #ddd;
+background:white;
+cursor:pointer;
+}
+
+.tab.active{
+background:#6d28d9;
+color:white;
+}
+
+/* label filters */
+
+.labelFilters{
+margin:0 30px;
+}
+
+.labelFilters button{
+margin-right:10px;
+padding:6px 12px;
+border:none;
+background:#eee;
+border-radius:6px;
+cursor:pointer;
+}
+
+/* issue header */
+
+.issuesHeader{
+display:flex;
+justify-content:space-between;
+background:white;
+margin:20px 30px;
+padding:20px;
+border-radius:10px;
+}
+
+.dot{
+width:10px;
+height:10px;
+border-radius:50%;
+display:inline-block;
+}
+
+.openDot{
+background:#22c55e;
+}
+
+.closedDot{
+background:#8b5cf6;
+}
